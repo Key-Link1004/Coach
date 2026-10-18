@@ -258,7 +258,7 @@ button {
   background: var(--gold);
 }
 
-#profileName {
+#profileNames {
   margin-top: 17px;
   font-family: "Playfair Display", serif;
   font-size: clamp(28px, 8vw, 36px);
