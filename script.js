@@ -1,6 +1,6 @@
 
 const PROFILE = {
-  name: "RICHES",
+  name: "Rudy Listana Ibañez",
   phone: "+639179222976",
   email: "rudyibanezchess@gmail.com",
   facebook: "https://www.facebook.com/riches.chess.club",
