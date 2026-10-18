@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101410">
+  <title>Chess Profile | My Links</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chess-glow glow-one"></div>
+  <div class="chess-glow glow-two"></div>
+
+  <main class="profile-card">
+
+    <header class="brand">
+
+    </header>
+
+    <div class="profile-upload">
+      <div class="avatar-ring">
+        <img
+          src="https://placehold.co/200x200/20251e/d8b66a?text=CHESS"
+          alt="Profile picture"
+          class="profile-picture"
+          id="profilePicture"
+        >
+      </div>
+
+      <label
+        for="imageInput"
+        class="upload-label"
+        id="uploadLabel"
+        title="Change profile picture"
+        aria-label="Change profile picture"
+        tabindex="0"
+      >+</label>
+
+      <input type="file" id="imageInput" accept="image/*" disabled>
+    </div>
+
+    <p id="uploadMessage" role="status" aria-live="polite"></p>
+
+    <div class="rank-badge">
+      <span>♟</span> CHESS ENTHUSIAST
+    </div>
+
+
+    <p class="bio">
+      Strategy, discipline, and excellence in chess. Led by IA/FT/FM Rudy L. Ibanez, we provide top-tier coaching for all levels, expertly organized tournaments, and professional arbitration for schools and clubs. Level up your game with us!
+    </p>
+
+    <div class="chess-divider">
+      <span>♜</span>
+      <div></div>
+      <span>♛</span>
+      <div></div>
+      <span>♚</span>
+    </div>
+
+    <section class="links-section">
+      <p class="section-title">MAKE YOUR MOVE</p>
+
+      <div class="social-links">
+
+        <a
+          href="https://www.facebook.com/YOUR_USERNAME"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-btn"
+        >
+          <span class="link-icon facebook-icon">f</span>
+          <span class="link-copy">
+            <strong>Facebook</strong>
+            <small>Connect with me</small>
+          </span>
+          <span class="link-arrow">↗</span>
+        </a>
+
+        <a
+          href="https://www.instagram.com/YOUR_USERNAME/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-btn"
+        >
+          <span class="link-icon instagram-icon">◎</span>
+          <span class="link-copy">
+            <strong>Instagram</strong>
+            <small>Follow my journey</small>
+          </span>
+          <span class="link-arrow">↗</span>
+        </a>
+
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=yourname@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-btn"
+        >
+          <span class="link-icon gmail-icon">✉</span>
+          <span class="link-copy">
+            <strong>Email Me</strong>
+            <small>Open Gmail to compose</small>
+          </span>
+          <span class="link-arrow">↗</span>
+        </a>
+
+        <button type="button" id="saveContact" class="social-btn contact-btn">
+          <span class="link-icon contact-icon">♙</span>
+          <span class="link-copy">
+            <strong>Save Contact</strong>
+            <small>Add me to your contacts</small>
+          </span>
+          <span class="link-arrow">↓</span>
+        </button>
+
+        <a href="tel:+917 922 2976" class="social-btn">
+          <span class="link-icon call-icon">☎</span>
+          <span class="link-copy">
+            <strong>Call Me</strong>
+            <small>Open your phone dialer</small>
+          </span>
+          <span class="link-arrow">↗</span>
+        </a>
+
+      </div>
+
+      <p id="contactMessage" class="contact-message"
+         role="status" aria-live="polite"></p>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-piece">♞</span>
+      <span>PLAY SMART. STAY CONNECTED.</span>
+      <span class="footer-piece">♞</span>
+    </footer>
+
+  </main>
+
+  <!-- Password Modal -->
+  <div class="modal-overlay" id="passwordModal"
+       aria-hidden="true">
+    <div class="password-modal" role="dialog"
+         aria-modal="true" aria-labelledby="modalTitle">
+
+      <button type="button" class="modal-close" id="closeModal"
+              aria-label="Close">&times;</button>
+
+      <div class="modal-lock-icon">♜</div>
+
+      <p class="modal-eyebrow">RESTRICTED ACCESS</p>
+      <h2 id="modalTitle">Your move.</h2>
+      <p class="modal-description">
+        Enter your password to change the profile picture.
+      </p>
+
+      <form id="passwordForm">
+        <label for="passwordInput">Password</label>
+
+        <div class="password-field">
+          <input type="password" id="passwordInput"
+                 placeholder="Enter password"
+                 autocomplete="current-password" required>
+
+          <button type="button" id="togglePassword"
+                  class="toggle-password"
+                  aria-label="Show password">Show</button>
+        </div>
+
+        <p id="passwordError" class="password-error"
+           role="alert" aria-live="polite"></p>
+
+        <button type="submit" class="unlock-button">
+          Unlock <span>→</span>
+        </button>
+
+        <button type="button" class="cancel-button"
+                id="cancelModal">Cancel</button>
+      </form>
+
+      <p class="modal-security-note">♟ AUTHORIZED ACCESS ONLY</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
